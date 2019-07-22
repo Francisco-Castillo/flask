@@ -26,4 +26,4 @@ def get_news():
     return render_template("home.html", articles=feed['entries'])
 
 if __name__ == '__main__':
-    app.run(port=5000,debug=True)
+    app.run(port=5000, debug=True)

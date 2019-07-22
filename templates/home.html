@@ -6,6 +6,12 @@
 </head>
 <body>
     <h1>Titulares</h1>
+
+    <form>
+        <input type="text" name="publication" placeholder="Buscar" />
+        <input type="submit" value="Enviar" />
+    </form>
+
     {%for article in articles%}
     <b><a href="{{article.link}}">{{article.title}}</a></b><br/>
     <i>{{article.published}}</i><br/>
